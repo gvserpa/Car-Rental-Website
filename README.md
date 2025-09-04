@@ -6,6 +6,10 @@
 [![Stripe](https://img.shields.io/badge/Stripe-API-635bff?logo=stripe&logoColor=white)](https://stripe.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-Deploy-black?logo=vercel&logoColor=white)](https://vercel.com/)
 
+## Live Demo
+
+- [Car Rental Project](https://car-rental-project-ggrv5hgti.vercel.app/)
+
 ---
 
 ## Project Description
