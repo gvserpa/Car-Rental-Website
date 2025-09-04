@@ -1,7 +1,5 @@
 # Car Rental Website
 
-![Project Banner](./screenshot.png) <!-- replace with your project banner or screenshot -->
-
 [![React](https://img.shields.io/badge/React-18.2.0-blue?logo=react&logoColor=white)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-20.16.0-green?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.18.2-lightgrey?logo=express&logoColor=black)](https://expressjs.com/)
@@ -46,26 +44,6 @@ The **Car Rental Website** is a responsive web application built with **React**.
 - Responsive layout for mobile and desktop devices.
 - Scroll-to-top functionality when navigating between pages.
 - Interactive buttons with hover effects.
-
----
-
-## Project Structure
-
-
-Car-Rental-Website/
-├── public/
-├── src/
-│ ├── assets/ # images and icons
-│ ├── components/ # reusable components
-│ ├── pages/ # site pages
-│ ├── routes/ # routing setup
-│ ├── server.js # backend for Stripe
-│ └── App.jsx
-├── .gitignore
-├── package.json
-├── README.md
-└── vite.config.js
-
 
 ---
 
