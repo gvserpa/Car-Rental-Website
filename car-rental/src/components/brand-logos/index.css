@@ -1,0 +1,39 @@
+.logos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* permite quebra em várias linhas em telas pequenas */
+    position: relative;
+    z-index: 10;
+    gap: 20px; /* adiciona espaçamento entre imagens */
+}
+
+.logos img {
+    max-width: 150px;
+    max-height: 100px;
+    width: 100%; /* para que a imagem se ajuste ao container */
+    height: auto;
+}
+
+/* Media Queries para responsividade */
+
+/* Telas médias */
+@media (max-width: 900px) {
+    .logos img {
+        max-width: 100px;
+        max-height: 80px;
+    }
+}
+
+/* Telas pequenas / mobile */
+@media (max-width: 600px) {
+    .logos {
+        justify-content: center; /* centraliza as logos */
+        gap: 15px;
+    }
+
+    .logos img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}

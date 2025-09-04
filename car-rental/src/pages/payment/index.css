@@ -1,0 +1,106 @@
+.payment-page {
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.payment-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.payment-header h1 {
+  font-size: 2.2rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.payment-header p {
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+/* Conteúdo principal: detalhes + formulário */
+.payment-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Lado esquerdo: detalhes da compra */
+.payment-details {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  flex: 1 1 350px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-details .car-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.car-info h2 {
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+}
+
+.car-info p {
+  margin: 0.3rem 0;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.extra-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #718096;
+  text-align: center;
+}
+
+/* Mensagem de sucesso ou erro */
+.payment-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.payment-message.success {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.payment-message.error {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+/* Lado direito: checkout */
+.checkout-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  flex: 1 1 350px;
+  max-width: 400px;
+}
+
+/* Botão de pagamento ajustado */
+.checkout-container button {
+  margin-top: 1rem;
+}

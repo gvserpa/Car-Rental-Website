@@ -1,0 +1,138 @@
+.mobile-app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px; /* espaçamento nas laterais */
+  flex-wrap: wrap; /* permite quebrar em colunas no mobile */
+}
+
+.mobile-app-content {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-app-content h3 {
+  color: rgb(167, 165, 165);
+  font-weight: 500;
+}
+
+.mobile-app-content h2 {
+  font-size: 3rem;
+}
+
+.mobile-app-content p {
+  max-width: 700px;
+}
+
+.mobile-button button {
+  padding: 16px 50px;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid black;
+  margin-bottom: 50px
+}
+
+.mobile-button button:hover {
+  background-color: rgb(212, 182, 7);
+  border: 1px solid rgb(212, 182, 7);
+  transform: scale(1.1);
+}
+
+.mobile-button img {
+  max-width: 15px;
+}
+
+/* Media Queries para responsividade */
+
+/* Telas médias */
+@media (max-width: 1200px) {
+  .mobile-app-img img {
+    margin-top: 50px;
+    max-width: 300px;
+  }
+
+  .mobile-app-content {
+    max-width: 60vw;
+  }
+
+  .mobile-app-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .mobile-app-content p {
+    max-width: 500px;
+  }
+  .mobile-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-button button {
+    padding: 14px 40px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Telas pequenas / tablets */
+@media (max-width: 900px) {
+  .mobile-app {
+    flex-direction: column;
+    justify-content: center;
+    height: auto; /* altura adaptável */
+    gap: 30px;
+  }
+
+  .mobile-app-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .mobile-app-content h2 {
+    font-size: 2rem;
+  }
+
+  .mobile-app-content p {
+    max-width: 100%;
+  }
+  .mobile-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-button button {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Telas muito pequenas / mobile */
+@media (max-width: 600px) {
+  .mobile-app-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .mobile-app-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .mobile-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-button button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}

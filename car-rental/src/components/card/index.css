@@ -1,0 +1,101 @@
+.section-card {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 140px 300px; /* desktop */
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card h2 {
+  font-size: 2rem;
+}
+
+.card p {
+  font-weight: 300;
+}
+
+.card button {
+  padding: 17px 50px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #d4b607;
+  transform: scale(1.1);
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 1024px) {
+  .card {
+    padding: 100px 150px;
+  }
+
+  .card h2 {
+    font-size: 1.8rem;
+  }
+
+  .card button {
+    padding: 15px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 80px 60px;
+  }
+
+  .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .card button {
+    padding: 12px 35px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 50px 25px;
+    gap: 15px;
+  }
+
+  .card h2 {
+    font-size: 1.4rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .card button {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}

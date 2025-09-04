@@ -1,0 +1,125 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 30vh;
+    padding: 20px;
+    flex-wrap: wrap; /* permite quebra de linha em telas pequenas */
+    box-sizing: border-box;
+    background-color: #f5f5f5; /* opcional */
+}
+
+.terms-privacy {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+
+.terms-privacy a:hover {
+    color: #d4b607;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav a:hover {
+    color: #d4b607;
+    cursor: pointer;
+}
+
+.subscribe-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-img {
+    display: flex;
+}
+
+.subscribe-content input {
+    border-radius: 20px 0 0 20px;
+    background-color: rgb(235, 233, 233);
+    border: none;
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.input-img button img {
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.subscribe-content img {
+    max-width: 50px;
+    border-radius: 100%;
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 1024px) {
+    footer {
+        justify-content: space-between;
+    }
+
+    .subscribe-content input {
+        width: 150px;
+        height: 38px;
+    }
+
+    .subscribe-content img {
+        max-width: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .terms-privacy {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-nav {
+        align-items: center;
+    }
+
+    .subscribe-content input {
+        width: 100%;
+    }
+
+    .input-img {
+        width: 100%;
+    }
+
+    .subscribe-content img {
+        max-width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe-content input {
+        font-size: 0.9rem;
+        height: 35px;
+    }
+
+    .subscribe-content img {
+        max-width: 35px;
+    }
+}

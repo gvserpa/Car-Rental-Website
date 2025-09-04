@@ -1,0 +1,251 @@
+/* Container principal */
+.main-content-cars {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row; /* itens lado a lado no desktop */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: rgb(240, 238, 238);
+    box-sizing: border-box;
+    flex-wrap: wrap; /* permite quebrar linha no mobile */
+}
+
+/* Título e subtítulo */
+.cars-title {
+    max-width: 400px;
+}
+
+.cars-title h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.cars-title p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Dropdown e date picker */
+.cars-dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 220px;
+}
+
+.btn-date p {
+    margin: 0 0 5px 0;
+    font-weight: 500;
+}
+
+.btn-date button {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-date button:hover {
+    background-color: #d4b607;
+    color: #fff;
+}
+
+/* Dropdown button */
+.dropdown-button {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #fff;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-button::after {
+    content: '▾';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    pointer-events: none;
+}
+
+.dropdown-button:hover {
+    background-color: #d4b607;
+    color: #fff;
+}
+
+/* Lista dropdown */
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.dropdown-list li {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-list li:hover {
+    background-color: #d4b607;
+    color: #fff;
+}
+
+/* Área do carro */
+.cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.cars img {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.cars p {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Botão Book Now */
+.book-now button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 50px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-now button:hover {
+    background-color: #d4b607;
+    color: #000;
+    transform: translateY(-2px);
+}
+
+.book-now button img {
+    max-width: 30px;
+}
+
+/* ====== RESPONSIVO ====== */
+@media (max-width: 1024px) {
+    .main-content-cars {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cars img {
+        max-width: 300px; /* limitar a largura da imagem */
+        width: 100%;
+        height: auto; /* mantém proporção */
+    }
+
+    .cars-title h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .cars-dropdown {
+        min-width: 200px;
+        width: 100%; /* evita overflow do dropdown */
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content-cars {
+        flex-direction: column;
+        gap: 25px;
+        padding: 15px;
+    }
+
+    .cars img {
+        width: 100%; /* ocupa 100% do container */
+        height: auto; /* mantém proporção */
+        max-width: 400px; /* limite para telas maiores */
+    }
+
+    .dropdown-button,
+    .btn-date button {
+        font-size: 0.95rem;
+        padding: 10px 14px;
+        width: 100%; /* garante que não vaze */
+        box-sizing: border-box;
+    }
+
+    .book-now button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cars-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .cars img {
+        width: 100%;
+        max-width: 100%; /* remove overflow lateral */
+        height: auto;
+    }
+
+    .dropdown-button,
+    .btn-date button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+        width: 100%;
+    }
+
+    .book-now button {
+      margin-bottom: 50px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
