@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-- [Car Rental Project](https://car-rental-project-ggrv5hgti.vercel.app/)
+- [Car Rental Project](https://car-rental-project-alpha-ten.vercel.app/)
 
 ---
 
