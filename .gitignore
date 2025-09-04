@@ -6,3 +6,4 @@ node_modules/
 # React
 client/node_modules/
 client/build/
+.vercel
